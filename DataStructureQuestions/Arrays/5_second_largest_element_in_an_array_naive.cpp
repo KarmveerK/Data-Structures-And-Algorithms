@@ -9,8 +9,8 @@ int secondLargestElement(int a[], int size){
             l_idx = i;
         }
     }
-    int sl_idx = 0;
-    for(int i=1; i<size; i++){
+    int sl_idx = -1;
+    for(int i=0; i<size; i++){
         if(a[i] > a[sl_idx] && a[i] < a[l_idx]){
             sl_idx = i;
         }
